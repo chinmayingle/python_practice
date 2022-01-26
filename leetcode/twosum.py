@@ -15,7 +15,7 @@ class Solution(object):
         for i,v in enumerate(nums):
             rq=target-v
 
-            #not checking val because its already present in the list we only need to check target - val
+            #not checking val because its already present in the list we only need to check (target - val)
             if mp.get(rq,-1) != -1 :
                 return i, mp[rq]
 
